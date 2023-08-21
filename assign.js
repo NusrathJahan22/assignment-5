@@ -8,16 +8,26 @@ function kitchenWare(data){
     selectedItemContainer.appendChild(h2)
     const newElementString=selectedItemContainer.value
     const newElement=parseFloat(newElementString)
-    // const kitchen=data.parentNode.childNodes[3].innerText.split(" ")[1]
-    // console.log(data.children[2].children[1].innerText)
     const kitchenPrice=data.children[2].children[1].innerText
+    
+//    end step
 
     // if side
+    let button=document.getElementById("#button");
+    // button.disable=true;
     if(200 <= total){
-        alert('you can get discount')
+        alert("you can get discount")
+    }else{
     }
 
 total =parseInt(total)+ parseInt(kitchenPrice)
  document.getElementById("total").innerText= total
-// console.log(total)
+
+// discount
+
+// const discountElementString=selectedItemContainer.value
+//     const discountElement=parseFloat(discountElementString)
+//     const discountPrice=data.children[2].children[1].innerText
+//      discount=( total.innerText/100)*20
+ 
 }
